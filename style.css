@@ -4,3 +4,7 @@ body {
   color:#fff;
   text-align: center;
 }
+
+.link a {
+  color:#000;
+}
