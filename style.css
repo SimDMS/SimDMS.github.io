@@ -38,7 +38,7 @@ h1 span {
 	border-radius:15px;
 	font-family:'Handlee', cursive;
 	background-color: lightyellow;
-	
+
 }
 .img_circle:hover {
 	border: 3px solid blue;
@@ -55,7 +55,7 @@ table {
 	width:100%;
 	text-align:center;
 	table-layout:fixed;
-	
+
 }
 td {
 	border: 2px solid lightgray;
@@ -63,7 +63,7 @@ td {
 }
 th {
 	border: 2px solid lightgray;
-	padding:15px;	
+	padding:15px;
 }
 .orange:hover {
 	border:3px solid blue;
@@ -76,18 +76,14 @@ progress {
 	height: 40px;
 	color:#3fb6b2;
 }
-iframe {
-	border: 3px solid lightblue;
-	width:45%;
-	text-align: center;
-	display:block;
-	margin: 50px auto;
-	border-radius:15px;
+
+.my_works {
+	padding:30px;
 }
 
 ul li {
 	margin:15px;
-	
+
 }
 div {
 	width-max: 70%;
@@ -121,7 +117,7 @@ form {
 	opacity:0.8;
 	text-align: center;
 	padding-top:30px;
-	
+
 	float:right;
 }
 input[type = 'text'], input[type = 'email'], textarea {
@@ -149,7 +145,7 @@ input[type = 'submit'] {
 
 ul {
 	list-style:none;
-}	
+}
 
 .square {
 	width:50px;
@@ -172,4 +168,29 @@ ul {
 }
 .square:hover {
 	opacity: 0.3;
+}
+
+.work_links a img {
+	width:300px;
+	height:250px;
+	opacity: 0.8;
+	transition: all 0.6s;
+
+}
+
+.work_links {
+	width:100%;
+	margin:0;
+	text-align: center;
+	margin-top: 50px;
+}
+.work_links a {
+	margin-left: 20px;
+}
+.work_links a:hover img {
+	opacity:1;
+	width:360px;
+	height:300px;
+	transition: all 1s;
+
 }
