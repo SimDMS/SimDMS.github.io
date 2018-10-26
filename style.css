@@ -1,10 +1,175 @@
 body {
-  background: purple;
-  font-size: 44px;
-  color:#fff;
-  text-align: center;
+	background-image: url('img/img_.jpg');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-color:#282923 ;
+}
+#intro {
+	background-image: url("fon_div.jpg");
+	background-size: cover;
+	text-align: center;
+	color:white;
+	margin-top:20px;
+	border: 2px solid lightblue;
+	border-radius: 15px;
+	font-size:25px;
+	font-family: 'Handlee', cursive;
+}
+.img_circle {
+	border: 3px solid blue;
+	border-radius: 50%;
+	opacity: 0.8;
+	transition:1s all;
 }
 
-.link a {
-  color:#cccccc;
+h1 span {
+	border: 4px dashed blue;
+	font-family: 'Handlee', cursive;
+	color: blue;
+	border: 3px dashes blue;
+	text-align: center;
+	font-size: 25px;
+	padding: 5px;
+	box-shadow:6px 6px 2px darkblue;
+}
+.section {
+	border:2px solid gray;
+	border-radius:15px;
+	font-family:'Handlee', cursive;
+	background-color: lightyellow;
+	
+}
+.img_circle:hover {
+	border: 3px solid blue;
+	opacity:1;
+	width: 150px;
+}
+.orange {
+	background-color:#f77700;
+	position:relative;
+}
+table {
+	border: 3px solid lightgrey;
+	border-collapse:collapse;
+	width:100%;
+	text-align:center;
+	table-layout:fixed;
+	
+}
+td {
+	border: 2px solid lightgray;
+	padding:15px;
+}
+th {
+	border: 2px solid lightgray;
+	padding:15px;	
+}
+.orange:hover {
+	border:3px solid blue;
+	top:10px;
+}
+
+progress {
+	background: #efefef;
+	width: 50%;
+	height: 40px;
+	color:#3fb6b2;
+}
+iframe {
+	border: 3px solid lightblue;
+	width:45%;
+	text-align: center;
+	display:block;
+	margin: 50px auto;
+	border-radius:15px;
+}
+
+ul li {
+	margin:15px;
+	
+}
+div {
+	width-max: 70%;
+	margin-left:270px;
+	margin-right:270px;
+	margin-bottom:25px;
+	opacity: 0.9;
+}
+form {
+	color: black;
+	font-weight:bold;
+	font-size: 20px;
+	font-family: 'Handlee', cursive;
+	background-color:lightblue;
+	width:40%;
+	padding:10px;
+	margin:50px auto;
+	border-radius:15px;
+}
+.button {
+	margin-right:335px;
+}
+.right {
+	color:white;
+	font-family: 'Handlee', cursive;
+	border:3px solid black;
+	border-radius: 15px;
+	width: 230px;
+	height: 380px;
+	background-color:#FF0C00;
+	opacity:0.8;
+	text-align: center;
+	padding-top:30px;
+	
+	float:right;
+}
+input[type = 'text'], input[type = 'email'], textarea {
+	border: 1px solid white;
+	border-radius:5px;
+	padding:6px;
+	box-shadow: inset 4px 5px 8px rgba(0,0,0,0.2);
+
+}
+input[type='email'] {
+	margin-left:8px;
+}
+input[type = 'submit'] {
+	display:block;
+	color: #333;
+	font-weight:bold;
+	font-size:20px;
+	font-family: 'Handlee', cursive;
+	padding:5px 25px;
+	border:none;
+	border-radius:15px;
+	background-image:linear-gradient(to bottom, #fff, #ddd);
+	box-shadow: 0 4px 2px rgba(0,0,0,0.3);
+}
+
+ul {
+	list-style:none;
+}	
+
+.square {
+	width:50px;
+	margin-top: 20px;
+	border-radius: 5px;
+	margin-right:25px;
+}
+.one {
+	margin-left:250px;
+}
+.links {
+	background-color: black;
+	height: 100px;
+	display: inline-block;
+	width: 63%;
+	border-radius: 7px;
+	border-color: black;
+	margin-left:275px;
+	opacity: 0.9;
+}
+.square:hover {
+	opacity: 0.3;
 }
