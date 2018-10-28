@@ -147,7 +147,7 @@ h1 {
 
 
 table {
-	border: none;
+	border: 2px solid;
 	border-collapse:collapse;
 	width:100%;
 	text-align:center;
@@ -155,12 +155,12 @@ table {
 }
 
 td {
-	border: none;
+	border: 1px solid;
 	padding:15px;
 }
 
 th {
-	border: none;
+	border: 3px solid;
 	padding:15px;
 }
 
