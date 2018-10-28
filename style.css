@@ -14,10 +14,10 @@ body {
 }
 
 header {
-	background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(10,14,10,1) 51%,rgba(10,8,9,1) 100%);
-	padding: 5px 0;
-	box-shadow: 0px 3px 20px rgba(0,0,0,0.5);
+  background: linear-gradient(135deg, rgba(252,236,252,1) 0%,rgba(105,42,140,1) 50%,rgba(72,37,102,1) 51%,rgba(48,23,48,1) 100%);  	padding: 5px 0;
+	box-shadow: 0px 3px 20px rgba(72,37,102,0.8);
 	position: relative;
+	padding: 20px 0;
 }
 
 header nav {
@@ -188,7 +188,9 @@ progress {
 }
 
 .my_works {
-	padding: 0 0 100px 0;
+	padding: 20px 0 100px 0;
+	background: url('img/work_bg.jpg') 50%;
+	background-size: cover;
 }
 
 .work_links {
@@ -197,7 +199,11 @@ progress {
 }
 
 .work_links a {
-	margin-left: 20px;
+	display: inline-block;
+}
+
+.work_links a:first-child {
+	margin-bottom: 30px;
 }
 
 .work_links a img {
@@ -205,7 +211,7 @@ progress {
 	height:250px;
 	opacity: 0.8;
 	transition: all 0.6s;
-	box-shadow: 0px 0px 10px 3px #000;
+	box-shadow: -3px -3px 6px rgba(0,0,0,0.3);
 }
 
 .work_links a:hover img {
@@ -222,7 +228,7 @@ progress {
 }
 
 .contact h1 {
-	color:#fff;
+	color:#f1f1f1;
 }
 
 .wrapper_form {
@@ -231,7 +237,7 @@ progress {
 }
 
 .contact form {
-	color:#6c6c6c;
+	color:#f1f1f1;
 	text-align: left;
 	position: relative;
 	margin-bottom: 50px;
@@ -239,7 +245,6 @@ progress {
 
 .form_inputs {
 	display: flex;
-	color:#6c6c6c;
 	justify-content: space-between;
 }
 
@@ -273,6 +278,8 @@ progress {
 	color:#fff;
 	margin:0;
 	cursor: pointer;
+	border-radius: 15px;
+	box-shadow: 0px 2px 5px rgba(255,255,255,0.3);
 }
 
 .contact input[type = 'submit']:hover {
@@ -285,7 +292,7 @@ progress {
 }
 
 footer {
-
+	background: rgb(43, 9, 59);
 }
 
 footer ul {
@@ -295,18 +302,61 @@ footer ul {
 
 footer ul li {
 	list-style: none;
-	margin:30px;
-}
+	margin: 10px 15px;
+	}
 
-footer ul li a .fab {
-	transition: all 0.3s ease-in;
-}
-footer ul li a:hover .fab {
-	opacity: 0.6;
-	transform: scale(1.1);
+footer ul li a {
+	width:90px;
+	height:90px;
+	background: #f1f1f1;
+	display: inline-block;
+	text-align: center;
+	margin: 10px;
+	line-height: 95px;
+	border-radius: 30%;
+	box-shadow: 0px 5px 15px -5px #00000070;
+	overflow: hidden;
+	position: relative;
 }
 
 .fab {
-	font-size: 38px;
-	color:black;
+	font-size: 26px;
+	color:rgb(43, 9, 59);
+	transition: 0.2s linear;
+}
+
+footer a:hover .fab {
+	transform: scale(1.3);
+	color:#f1f1f1;
+}
+
+footer a::before {
+	content: '';
+	position: absolute;
+	width:120%;
+	height:120%;
+	background:rgb(41, 105, 221);
+	transform: rotate(45deg);
+	left:-110%;
+	top:90%;
+}
+
+footer a:hover::before {
+	animation: aaa 0.7s 1;
+	top:-10%;
+	left:-10%;
+}
+
+@keyframes aaa {
+	0%{
+		left:-110%;
+		top:90%;
+	}50%{
+		left:10%;
+		top:-30%;
+	}100%{
+		left:-10%;
+		top:-10%;
+	}
+
 }
