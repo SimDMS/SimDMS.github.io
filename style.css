@@ -14,7 +14,7 @@ body {
 }
 
 header {
-	padding: 20px 0;
+	padding: 50px 0;
 }
 
 header nav {
@@ -85,16 +85,17 @@ header nav a:hover::after {
 	opacity: 1;
 }
 
-header nav ul li:first-child {
-	margin-right: auto;
+.logo {
 	cursor: pointer;
+	float: left;
+	margin-top:-15px; 
 }
 
-header nav ul li:first-child img {
+.logo img {
 	transition: all 2s;
 }
 
-header nav ul li:first-child img:hover {
+.logo img:hover {
 	transform: rotate(360deg) scale(1.2);
 }
 
