@@ -204,12 +204,6 @@ th {
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
 }
-
-.my_works h1 {
-	margin: 50px 0 20px;
-
-}
-
 @keyframes change_bg {
 	0%{
 		background-color: rgba(0, 0, 0, 0.2);
@@ -229,10 +223,16 @@ th {
 	}
 }
 
+.my_works h1 {
+	margin: 50px 0 20px;
+
+}
+
+
 .work_links {
 	margin: 0 auto;
 	margin-top: 80px;
-	max-width: 50%;
+	min-width: 50%;
 
 }
 
