@@ -261,7 +261,7 @@ th {
 .work_links a:hover img {
 	opacity:1;
 	transform: scale(1.2);
-	transition: all 1s;
+	transition: all 0.5s;
 	box-shadow: -15px -15px 30px rgba(0,0,0,0.5);
 }
 
