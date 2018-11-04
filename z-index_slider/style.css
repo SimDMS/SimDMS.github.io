@@ -1,0 +1,111 @@
+* {
+  transition: .3s;
+}
+html,body {
+  width:100%;
+  height:100%;
+  margin: 0;
+}
+
+
+body {
+  background: url('bg.jpg');
+  background-size: cover;
+}
+
+.slider {
+  width: 60%;
+  height:0;
+  margin: 100px auto;
+  position: relative;
+  padding-bottom: 40%;
+  width:70%;
+  border:10px solid #2c2c2c;
+}
+
+.slider .items {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.slider .items img {
+  width:100%;
+  height: 100%;
+}
+
+#btn1,#btn2,#btn3,#btn4 {
+  display: none;
+}
+
+.pre, .next {
+  height:100%;
+  width:12%;
+  background: rgba(88,88,88,0.3);
+  position: absolute;
+  top:0;
+  z-index: 99;
+  cursor: pointer;
+  color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+i {
+  display: block;
+  font-size: 5vw;
+
+}
+.pre {
+  left:0;
+}
+.next {
+  right:0;
+}
+
+.pre:hover i, .next:hover i {
+  color: rgba(0,0,0,0.8);
+}
+.pre:hover, .next:hover {
+  background: rgba(88,88,88,.5)
+}
+
+
+
+.nav {
+  width: 100%;
+  height: 18px;
+  position: absolute;
+  bottom:12%;
+  text-align: center;
+  z-index: 99;
+}
+
+.dots {
+  top:-5px;
+  width: 18px;
+  height: 18px;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+  background: rgba(88,88,88,.6);
+}
+
+.items {
+  z-index: -1;
+}
+
+#btn1:checked ~ #item1,
+#btn2:checked ~ #item2,
+#btn3:checked ~ #item3,
+#btn4:checked ~ #item4 {
+  z-index: 9;
+}
+
+#btn1:checked ~ .nav #dot1,
+#btn2:checked ~ .nav #dot2,
+#btn3:checked ~ .nav #dot3,
+#btn4:checked ~ .nav #dot4 {
+  background: #fff;
+}
