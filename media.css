@@ -12,6 +12,9 @@
 }
 
 @media screen and (max-width: 720px) {
+      .arrow_link {
+        display: none;
+      }
       .slide { padding: 30px 0;}
       .slide p {font-size: 22px;}
       .slide p i { margin-left: 5px; font-size: 42px;}
@@ -61,10 +64,27 @@
     .schedule h1 {
     font-size: 3vw;
   }
-
     td, th {
     	padding:8px;
     }
+    .my_works .description {
+    padding: 12px 8px;
+    font-size: 12px;
+  }
+
+    .slide p:nth-child(2) {
+    font-size: 16px;
+  }
+    .slide p i {
+    font-size: 24px;
+  }
+  .my_works {
+    padding: 5px 0 36px 0;
+  }
+  h1:not(.my_works_heading) {
+    margin: 0px 0 20px;
+    font-size: 22px;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -75,5 +95,22 @@
       .slider { height: 0; margin: 28px auto;}
       .dots { top: 10px; width: 13px; height: 13px; margin: 0px 3px;}
       .wrapper_form {	width:90%;}
+      .slide p:nth-child(2) {
+        font-size: 12px;
+      }
+      .slide p i {
+    font-size: 20px;
+  }
+  h1:not(.my_works_heading) {
+    margin: 0px 0 10px;
+    font-size: 18px;
+  }
+  .form_inputs p {
+    font-size: 12px;
+  }
+
+  .contact form input {
+    font-size: 14px;
+  }
 
 }
