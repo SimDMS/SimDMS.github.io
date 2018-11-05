@@ -7,6 +7,25 @@ body {
 	font-family: 'Handlee', cursive;
 }
 
+.fa-angle-double-up{
+	position: fixed;
+	top:40%;
+	left:30px;
+	opacity: 0.5;
+	transition: all 0.3s;
+}
+
+.fa-angle-double-up:hover {
+	opacity: 1;
+	transform: scale(1.1);
+	transition: all 0.3s;
+}
+
+.arrow_link {
+	text-decoration: none;
+	color:#000;
+}
+
 
 .wrapper {
 	width:90%;
