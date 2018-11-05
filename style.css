@@ -154,7 +154,7 @@ header nav a:hover::after {
 }
 
 .bg {
-	background:url('img/header2_opac.jpg');
+	background:url('img/header2_opac.jpg') 40%;
 	background-size: cover;
 	border-top: 1px solid rgba(0,0,0,0);
 }
@@ -246,7 +246,7 @@ th {
 
 .my_works {
 	padding: 20px 0 100px 0;
-	background: url('img/work_bg.jpg') 30% 40%;
+	background: url('img/work_bg.jpg') 0 20% ;
 	background-size:cover;
 	text-align: center;
 }
@@ -458,7 +458,7 @@ th {
 
 /* slider end */
 .contact_bg {
-	background: url('img/contact_bg.jpeg');
+	background: url('img/contact_bg.jpeg')50% 30%;
 	background-size: cover;
 	border:1px solid rgba(0,0,0,0);
 }
@@ -551,7 +551,9 @@ th {
 	width: 30%;
 	max-width: 150px;
 }
-
+footer {
+	padding-bottom: 10px;
+}
 footer ul {
 	display: flex;
 	justify-content: center;

@@ -85,6 +85,15 @@
     margin: 0px 0 20px;
     font-size: 22px;
   }
+  footer ul li a {
+  	width:60px;
+  	height:60px;
+    line-height: 65px;
+    margin: 0;
+  }
+  .fab {
+  	font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -111,6 +120,17 @@
 
   .contact form input {
     font-size: 14px;
+  }
+  footer ul li a {
+  	width:45px;
+  	height:45px;
+    line-height: 46px;
+  }
+  .fab {
+  	font-size: 16px;
+  }
+  footer ul li {
+    margin-left: 5px;
   }
 
 }
