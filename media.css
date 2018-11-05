@@ -54,6 +54,17 @@
         top:10%;
         left:50%;
       }
+
+      .schedule {
+      padding: 40px 0 50px;
+    }
+    .schedule h1 {
+    font-size: 3vw;
+  }
+
+    td, th {
+    	padding:8px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -64,4 +75,5 @@
       .slider { height: 0; margin: 28px auto;}
       .dots { top: 10px; width: 13px; height: 13px; margin: 0px 3px;}
       .wrapper_form {	width:90%;}
+
 }

@@ -19,6 +19,10 @@ body {
 	opacity: 0.5;
 	transition: all 0.3s;
 }
+.arrow_link i {
+	font-size: 5vw;
+}
+
 
 .arrow_link:hover {
 	opacity: 1;
@@ -224,12 +228,14 @@ table {
 
 td {
 	border: 1px solid;
-	padding:15px;
+	padding:11px;
+	font-size: 2vw;
 }
 
 th {
 	border: 3px solid;
 	padding:15px;
+	font-size: 2vw;
 }
 
 .orange {
