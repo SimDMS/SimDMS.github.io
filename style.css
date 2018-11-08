@@ -299,8 +299,8 @@ th {
 	padding: 0 30px;
 }
 
-.work_links a:first-child {
-	margin-bottom: 30px;
+.work_links a {
+	margin-bottom: 25px;
 }
 
 .work_links a img {
