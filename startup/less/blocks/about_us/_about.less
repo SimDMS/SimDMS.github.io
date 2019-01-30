@@ -1,0 +1,48 @@
+.about {
+	padding:100px 0;
+	text-align: center;
+	background-color:#f8f8f8;
+	color:#555;
+	&__text-container {
+		display:flex;
+		justify-content: space-between;
+		margin-bottom: 75px;
+		.text {
+			text-align: justify;
+			flex-basis: 49%;
+			font-size:14px;
+			font-family: 'Roboto Slab', serif;
+			line-height: 2em;
+		}
+	}
+	&__slider {
+		position:relative;
+		&__card {
+			.name {
+				font-size:14px;
+				text-transform: uppercase;
+				margin:20px 0;
+			}
+			.description {
+				font-family:'Roboto Slab', serif;
+				font-size:13px;
+			}
+			.img {
+				position:relative;
+				width:260px;
+				height:248px;
+				transition: all 0.2s;
+				&:hover {
+					.rect {
+						opacity: 1;
+						transition: all 0.4s
+					}
+				}
+				img {
+					width:100%;
+					height: 100%;
+				}
+			}
+		}
+	}	
+}

@@ -1,0 +1,225 @@
+header {
+  padding-top: 40px;
+  height: 770px;
+  background: url('../img/header_background.jpg');
+  background-size: cover;
+  color: #fff;
+}
+header .logo {
+  font-size: 24px;
+  font-weight: 700;
+  float: left;
+}
+header .logo a {
+  text-decoration: none;
+  color: #fff;
+}
+header nav {
+  font-size: 14px;
+  width: 530px;
+  margin-left: auto;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 0;
+  position: relative;
+  display: block;
+}
+header nav ul li a::after {
+  content: '';
+  display: block;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  transform: scale(0);
+}
+header nav ul li a:hover::after {
+  transform: scale(1);
+  transition: all 0.2s;
+}
+header .title {
+  text-align: center;
+  margin-top: 250px;
+}
+header .title h1 {
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: normal;
+}
+header .title__description {
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  margin: 30px 0 50px;
+}
+.services {
+  padding: 100px 0;
+  text-align: center;
+  color: #555;
+}
+.services__three {
+  display: flex;
+  justify-content: space-around;
+}
+.services__three .service {
+  flex-basis: 30%;
+}
+.services__three .service .img {
+  width: 90px;
+  height: 90px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  margin: 0 auto;
+  line-height: 95px;
+  font-size: 50px;
+  color: #c0301c;
+  font-family: serif;
+  font-weight: 700;
+  transition: all 0.2s;
+}
+.services__three .service .img:hover {
+  background-color: #c0301c;
+  color: #fff;
+  transition: all 0.2s;
+}
+.services__three .service .heading {
+  margin: 30px 0 25px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 14px;
+}
+.services__three .service .description {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  color: #666;
+}
+.services__three .one-of-three .img {
+  font-size: 70px;
+  line-height: 90px;
+}
+.about {
+  padding: 100px 0;
+  text-align: center;
+  background-color: #f8f8f8;
+  color: #555;
+}
+.about__text-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 75px;
+}
+.about__text-container .text {
+  text-align: justify;
+  flex-basis: 49%;
+  font-size: 14px;
+  font-family: 'Roboto Slab', serif;
+  line-height: 2em;
+}
+.about__slider {
+  position: relative;
+}
+.about__slider__card .name {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.about__slider__card .description {
+  font-family: 'Roboto Slab', serif;
+  font-size: 13px;
+}
+.about__slider__card .img {
+  position: relative;
+  width: 260px;
+  height: 248px;
+  transition: all 0.2s;
+}
+.about__slider__card .img:hover .rect {
+  opacity: 1;
+  transition: all 0.4s;
+}
+.about__slider__card .img img {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 1140px;
+  margin: 0 auto;
+}
+.button {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 180px;
+  color: #fff;
+  padding: 15px 0;
+  border: 2px solid #fff;
+  transition: 0.2s;
+}
+.button:hover {
+  background-color: #fff;
+  color: #cc3333;
+}
+.block-title {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 20px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 30px;
+}
+.block-title::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #555555;
+  top: 100%;
+  left: 0;
+  transform: scale(0.5);
+}
+.block-description {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  margin-bottom: 70px;
+  color: #555555;
+}
+.about .rect {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  transition: all 0.2s;
+}
+.about .rect .social {
+  margin-top: 180px;
+}
+.about .rect .social a {
+  color: #fff;
+  display: inline-block;
+  padding: 5px;
+  transition: 0.2s;
+}
+.about .rect .social a:hover {
+  background-color: #c0301c;
+  transition: 0.3s;
+}
