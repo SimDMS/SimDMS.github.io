@@ -152,6 +152,9 @@ header .title__description {
   width: 100%;
   height: 100%;
 }
+.works {
+  text-align: center;
+}
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -222,4 +225,73 @@ body {
 .about .rect .social a:hover {
   background-color: #c0301c;
   transition: 0.3s;
+}
+.works .filter-img-rect {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  color: #fff;
+  background-color: rgba(255, 0, 0, 0.4);
+  transition: opacity 0.3s;
+}
+.works .filter-img-rect h3 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 105px;
+}
+.works .filter-img-rect small {
+  font-family: 'Roboto Slab', serif;
+}
+.works .filter-img-rect .filter-btn {
+  display: block;
+  margin: 30px auto 0;
+  width: 100px;
+  height: 40px;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #c0301c;
+  text-decoration: none;
+  line-height: 40px;
+  font-size: 14px;
+  font-family: 'Roboto Slab', serif;
+}
+.works {
+  padding: 100px 0;
+  color: #555;
+  text-align: center;
+}
+.works .categories {
+  margin-bottom: 70px;
+}
+.works .categories .category {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+  margin-right: 20px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.works .categories .category:hover {
+  color: #c0301c;
+  transition: 0.3s;
+}
+.works .categories-images {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+}
+.works .categories-images .filter-img {
+  width: 360px;
+  height: 320px;
+  position: relative;
+}
+.works .categories-images .filter-img:hover .filter-img-rect {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.works .categories-images .filter-img img {
+  width: 100%;
+  height: 100%;
 }
