@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+  // slick slider
   $('.about__slider').slick({
   dots: false,
   infinite: true,
@@ -32,7 +34,9 @@ $(document).ready(function(){
   ]
   });
 
-// filter----------------------------------
+// -------------------------------------
+
+// filter
 
 $('#branding').on('click', function(){
     $('.design').fadeOut(400);
@@ -69,8 +73,6 @@ $('#all').on('click', function(){
     $('.strategy').fadeIn(400);
 });
 
-
-
 //second way 
  // $('.categories span').click(function(){
  //  var get_id = this.id;
@@ -83,6 +85,8 @@ $('#all').on('click', function(){
  // $('#all').click(function() {
  //  $('.filter-img').show(500);
  // });
+
+ // -------------------------------------------------
 
 
 
