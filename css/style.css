@@ -274,6 +274,120 @@ header .title__description {
 .blog .article__content a:hover {
   color: #c0301c;
 }
+.clients {
+  background-color: #f8f8f8;
+  padding: 100px 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  color: #555;
+}
+.clients__text {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 2em;
+  width: 70%;
+  margin: 20px auto;
+}
+.clients__copy {
+  font-size: 20px;
+}
+.contacts-form {
+  text-align: center;
+  padding: 100px 0;
+  color: #555;
+}
+.contacts-form .contacts {
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+}
+.contacts-form .contacts__each {
+  margin-bottom: 40px;
+}
+.contacts-form .contacts__each p {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 0;
+}
+.contacts-form .contacts__each p span {
+  display: block;
+  position: absolute;
+  left: -30px;
+  top: -2px;
+  font-size: 20px;
+}
+.contacts-form .contacts__each small {
+  font-size: 12px;
+  font-family: 'Roboto Slab', serif;
+  line-height: 2em;
+}
+.contacts-form .form {
+  text-align: left;
+  width: 730px;
+  display: inline-block;
+  margin-left: 50px;
+}
+.contacts-form .form-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contacts-form .form input[type='text'],
+.contacts-form .form input[type='email'] {
+  flex-basis: 350px;
+  height: 45px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  border: 2px solid #555;
+  outline: none;
+}
+.contacts-form .form textarea {
+  flex-grow: 1;
+  height: 100px;
+  margin-bottom: 25px;
+  padding: 20px;
+  border: 2px solid #555;
+  outline: none;
+}
+.contacts-form .form input[type='submit'] {
+  display: inline-block;
+  text-align: left;
+  background-color: transparent;
+  border: 2px solid #555;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  color: #555;
+  font-family: 'Roboto Slab', serif;
+  transition: all 0.3s;
+}
+.contacts-form .form input[type='submit']:hover {
+  background-color: #c0301c;
+  color: #fff;
+  transition: all 0.3s;
+}
+.contacts-form .form small {
+  font-family: 'Roboto Slab', serif;
+  font-size: 12px;
+  margin-left: 40px;
+}
+.contacts-form .form small span {
+  color: #c0301c;
+}
+.contacts-form .form input,
+.contacts-form .form textarea {
+  transition: all 0.3s;
+}
+.contacts-form .form input:focus,
+.contacts-form .form textarea:focus {
+  border-color: #c0301c;
+  transition: all 0.3s;
+}
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -375,4 +489,58 @@ body {
   line-height: 40px;
   font-size: 14px;
   font-family: 'Roboto Slab', serif;
+}
+footer {
+  text-align: center;
+  padding: 100px 0;
+  background-color: #c0301c;
+}
+footer .social {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+footer .social ul {
+  display: inline-block;
+}
+footer .social ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  line-height: 40px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+footer .social ul li:hover {
+  background-color: #fff;
+  transition: all 0.3s;
+}
+footer .social ul li:hover a {
+  color: #000;
+  transition: all 0.3s;
+}
+footer .social ul li a {
+  color: #fff;
+  transition: all 0.3s;
+}
+footer .social ul::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 50px;
+  height: 2px;
+  background-color: #fff;
+  transform: translate(-50%);
+}
+footer .footer-copy {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+  font-size: 12px;
 }

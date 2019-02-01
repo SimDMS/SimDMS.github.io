@@ -88,7 +88,12 @@ $('#all').on('click', function(){
 
  // -------------------------------------------------
 
+// owl carousel
+$(".owl-carousel").owlCarousel({
+  items:4,
+  margin:60
 
+});
 
 
 

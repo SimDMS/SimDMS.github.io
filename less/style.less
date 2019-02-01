@@ -6,6 +6,8 @@
 @import url(blocks/works/_works.less);
 @import url(blocks/getintouch/_getintouch.less);
 @import url(blocks/blog/_blog.less);
+@import url(blocks/clients/_clients.less);
+@import url(blocks/contactform/_contact.less);
 body {
 	font-family: 'Montserrat', sans-serif;
 	margin:0;
@@ -55,7 +57,7 @@ body {
 		margin-bottom: 70px;
 		color:#555555;
 }
-
+// for  rectangle in block about
 .about {
 	.rect {
 			opacity:0;
@@ -82,7 +84,7 @@ body {
 		}
 	}
 
-
+// for  rectangle in block work
 .works {
 	.filter-img-rect{
 		opacity:0;
@@ -117,4 +119,60 @@ body {
 	}
 }
 // -----------------------------
+
+footer {
+	text-align: center;
+	padding:100px 0;
+	background-color:#c0301c;
+	.social {
+		margin-bottom: 30px;
+		padding-bottom:30px;
+		position: relative;
+		display:inline-block;
+		ul{
+			display:inline-block;
+			li {
+				list-style: none;
+				display:inline-block;
+				margin-right: 20px;
+				width:40px;
+				height:40px;
+				border:2px solid #fff;
+				border-radius:50%;
+				line-height:40px;
+				transition: all 0.3s;
+				cursor: pointer;
+				&:hover {
+					background-color:#fff;
+					transition: all 0.3s;
+					a {
+						color:#000;
+						transition: all 0.3s;
+					}
+				}
+				a {
+					color:#fff;
+					transition: all 0.3s;
+				}
+			}
+				&::after {
+					content:'';
+					position:absolute;
+					top:100%;
+					left:50%;
+					width:50px;
+					height:2px;
+					background-color:#fff;
+					transform:translate(-50%);
+				}	
+			}
+		}
+		.footer-copy {
+			color:#fff;
+			text-transform: uppercase;
+			font-family: 'Roboto Slab', serif;
+			font-size:12px;
+		}
+}
+
 
