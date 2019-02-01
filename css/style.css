@@ -335,6 +335,10 @@ header .title__description {
   font-family: 'Roboto Slab', serif;
   color: #555;
 }
+.clients .carousel {
+  width: 70%;
+  margin: 0 auto;
+}
 .clients__text {
   font-size: 18px;
   font-style: italic;
