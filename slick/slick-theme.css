@@ -16,14 +16,15 @@
     font-weight: 700;
     color:#fff;
 }
+.slick-next{
+    right:25px;
+}
 .slick-prev:hover,
 .slick-next:hover
 {
     background-color:#c0301c;
     transition: all 0.2s;
 }
-.slick-next{
-    right:0;
-}
+
 
 
