@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
+    <link rel="stylesheet" href="css/animate.css">
     <title>StartUp Project</title>
   </head>
   <body>
@@ -20,30 +21,30 @@
         <nav>
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Works</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
        <div class="title">
         <h1>welcome to startup</h1>
          <p class="title__description">Your Favourite Creative Agency Template</p>
-         <a href="#" class="button title__button">get started</a>
+         <a href="#contact" class="button title__button">get started</a>
        </div>
       </div>
     </header>
     
     <main>
       <!-- services -->
-      <section class="services">
+      <section class="services" id='services'>
        <div class="wrapper">
         <h2 class="services__tilte block-title">services</h2>
           <p class="block-description">We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
           <div class="services__three">
-            <div class="one-of-three service">
+            <div class="one-of-three service wow fadeInLeft">
               <div class="img">A</div>
                 <h3 class = 'heading'>Clean Typography</h3>
                 <p class = 'description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</p>    
@@ -55,7 +56,7 @@
                  <p class = 'description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</p>
             </div>
             <!-- /.two-of-three -->
-            <div class="three-of-three service">
+            <div class="three-of-three service wow fadeInRight">
               <div class="img"><i class="far fa-life-ring"></i></div>
                 <h3 class = 'heading'>Expert Support</h3>             
                 <p class = 'description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit. Lorem ipsum.</p>
@@ -66,7 +67,7 @@
         </div>
       </section>
       <!-- /.about -->
-      <section class="about">
+      <section class="about" id = "about">
         <div class="wrapper">
           <h2 class="block-title">about us</h2>
           <p class="block-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
@@ -74,8 +75,7 @@
             <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod tempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos et accusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Lorem ipsum dolor sit amet. Lorem ipsum eat.</div> 
            <div class="text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sediam nonumy eirmod tempor invidunt ut labore et dolore aliquyam erat, sed diam voluptua. At vero eos et accusam et justo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor et dolore aliquyam erat. Lorem ipsum dolor sit amet. Lorem ipsum eat.</div>
          </div>
-          <div class="about__slider">
-           
+          <div class="about__slider wow fadeInUp">
             <div class="about__slider__card">
               <div class="img">
                 <img src="img/team_member_1.jpg" alt="">
@@ -185,10 +185,10 @@
         </div>
       </section>
       <!-- works -->
-      <section class="works">
+      <section class="works" id = 'works'>
         <div class="wrapper">
           <h2 class="block-title">latest works</h2>
-          <div class="works__filter">
+          <div class="works__filter wow fadeInRight">
             <div class="categories">
               <span class="category" id = 'all'>All</span>
               <span class="category" id = 'branding'>Branding</span>
@@ -248,19 +248,19 @@
         </div>
       </section>
       <!-- get in touch -->
-      <section class="get-in-touch">
+      <section class="get-in-touch wow fadeIn" >
         <div class="wrapper">
           <p>Do you like OUR WORK so far?</p>
           <p>Let's talk about YOUR PROJECT!</p>
-          <a href="#" class="button get-in-touch__btn">get in touch</a>
+          <a href="#contact" class="button get-in-touch__btn">get in touch</a>
         </div>
       </section>
       <!-- blog -->
-      <section class="blog">
+      <section class="blog" id = 'blog'>
         <div class='wrapper'>
           <h2 class="block-title">recent blog posts</h2>
           <p class="block-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit amet</p>
-            <div class="article">
+            <div class="article wow fadeInUp">
               <div class="article__img"><img src="img/blog1.jpg" alt="blog1"></div>
               <div class="article__content">
                 <div class="article__content-calendar"><span>18</span>oct</div>
@@ -270,7 +270,7 @@
                 <a href="#">read more</a>
               </div>
             </div>
-             <div class="article">
+             <div class="article  wow fadeInUp">
               <div class="article__img"><img src="img/blog2.jpg" alt="blog2"></div>
               <div class="article__content">
                 <div class="article__content-calendar"><span>18</span>oct</div>
@@ -283,7 +283,7 @@
         </div>
       </section>
       <!-- clients -->
-      <section class="clients">
+      <section class="clients" id = 'clients'>
         <div class="wrapper">
           <div class="owl-carousel owl-theme owl-loaded carousel">
             <img src="img/deorham.png" alt="deorham"> 
@@ -308,7 +308,7 @@
         </div>
       </section>
       <!-- contacts -->
-      <section class="contacts-form">
+      <section class="contacts-form" id = 'contact'>
         <div class="wrapper">
           <h2 class="block-title">get in touch</h2>
           <p class="block-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
@@ -327,7 +327,7 @@
                 <small>shapedtheme@gmail.com <br>khalilkode@gmail.com</small>
               </div>
             </div>
-            <div class="form">
+            <div class="form wow fadeInRight">
               <form action="" method="POST">
                 <div class="form-container">
                   <input type="text" placeholder="enter your name">
@@ -344,7 +344,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class='wow fadeIn'>
       <div class="social">
         <ul>
           <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -361,7 +361,10 @@
 
 
 
-
+<script src="js/wow.min.js"></script>
+<script>             
+  new WOW().init();
+</script>
 <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="slick/slick.js"></script>

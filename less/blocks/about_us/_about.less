@@ -1,4 +1,30 @@
 .about {
+	.rect {
+			opacity:0;
+			position:absolute;
+			width: 100%;
+			height: 100%;
+			background-color:rgba(0,0,0,0.3);
+			top:0;
+			left:0;
+			transition: all 0.2s;
+			.social {
+				margin-top: 180px;
+				a {
+					color:#fff;
+					display:inline-block;
+					padding:5px;
+					transition: 0.2s;
+					&:hover{
+					background-color:#c0301c;
+					transition: 0.3s;
+					}
+				}
+			}
+		}
+	}
+
+.about {
 	padding:100px 0;
 	text-align: center;
 	background-color:#f8f8f8;

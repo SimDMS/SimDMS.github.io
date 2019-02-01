@@ -97,7 +97,5 @@ $(".owl-carousel").owlCarousel({
 
 
 
-
-
 });
 				

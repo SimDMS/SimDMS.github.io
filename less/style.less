@@ -8,6 +8,7 @@
 @import url(blocks/blog/_blog.less);
 @import url(blocks/clients/_clients.less);
 @import url(blocks/contactform/_contact.less);
+@import url(blocks/footer/_footer.less);
 body {
 	font-family: 'Montserrat', sans-serif;
 	margin:0;
@@ -57,122 +58,6 @@ body {
 		margin-bottom: 70px;
 		color:#555555;
 }
-// for  rectangle in block about
-.about {
-	.rect {
-			opacity:0;
-			position:absolute;
-			width: 100%;
-			height: 100%;
-			background-color:rgba(0,0,0,0.3);
-			top:0;
-			left:0;
-			transition: all 0.2s;
-			.social {
-				margin-top: 180px;
-				a {
-					color:#fff;
-					display:inline-block;
-					padding:5px;
-					transition: 0.2s;
-					&:hover{
-					background-color:#c0301c;
-					transition: 0.3s;
-					}
-				}
-			}
-		}
-	}
 
-// for  rectangle in block work
-.works {
-	.filter-img-rect{
-		opacity:0;
-		position:absolute;
-		width:100%;
-		height: 100%;
-		top:0;
-		color:#fff;
-		background-color:rgba(255,0,0,0.4);
-		transition: opacity 0.3s;
-		h3 {
-			font-size:18px;
-			font-weight:normal;
-			margin-top: 105px;
-		}
-		small {
-			font-family: 'Roboto Slab', serif;
-		}
-		.filter-btn {
-			display:block;
-			margin: 30px auto 0;
-			width:100px;
-			height: 40px;
-			text-transform: uppercase;
-			background-color:#fff;
-			color:#c0301c;
-			text-decoration: none;
-			line-height: 40px;
-			font-size:14px;
-			font-family: 'Roboto Slab', serif;
-		}
-	}
-}
-// -----------------------------
-
-footer {
-	text-align: center;
-	padding:100px 0;
-	background-color:#c0301c;
-	.social {
-		margin-bottom: 30px;
-		padding-bottom:30px;
-		position: relative;
-		display:inline-block;
-		ul{
-			display:inline-block;
-			li {
-				list-style: none;
-				display:inline-block;
-				margin-right: 20px;
-				width:40px;
-				height:40px;
-				border:2px solid #fff;
-				border-radius:50%;
-				line-height:40px;
-				transition: all 0.3s;
-				cursor: pointer;
-				&:hover {
-					background-color:#fff;
-					transition: all 0.3s;
-					a {
-						color:#000;
-						transition: all 0.3s;
-					}
-				}
-				a {
-					color:#fff;
-					transition: all 0.3s;
-				}
-			}
-				&::after {
-					content:'';
-					position:absolute;
-					top:100%;
-					left:50%;
-					width:50px;
-					height:2px;
-					background-color:#fff;
-					transform:translate(-50%);
-				}	
-			}
-		}
-		.footer-copy {
-			color:#fff;
-			text-transform: uppercase;
-			font-family: 'Roboto Slab', serif;
-			font-size:12px;
-		}
-}
 
 
