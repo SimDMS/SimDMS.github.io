@@ -1,4 +1,22 @@
 $(document).ready(function(){
+  // burger menu
+  $('.burger').on('click', function(){
+    
+    if($('nav').css('opacity')==1){
+      $('nav').css({
+      'opacity':0
+    });
+    }
+    else{
+      $('nav').css({
+            'opacity':1
+          });
+    }
+
+  });
+
+
+
 
   // slick slider
   $('.about__slider').slick({
