@@ -47,22 +47,22 @@
         padding: 100px 30px;
 }
     .contacts-form .contacts {
-      display: block; 
-      text-align: center; 
-        
+               
 }
-    .email {
-        color: #c0301c;
+
+@media screen and (max-width: 1116px){
+  .contacts-form .contacts__each {
+  display: inline-block;
+  margin-right: 30px;
 }
-    .hotline {
-        color: #c0301c;
+.contacts-form .contacts__each p span {
+  display: none;
 }
-    .adress {
-        color: #c0301c;
-}
+} 
+
     
 @media screen and (max-width: 920px) {
-    .about, .services, .get-in-touch, .works, .blog, .clients, .contacts-form {
+    .about, .services, .get-in-touch, .works, .blog, .clients, .contacts-form, footer {
         padding: 20px 0;
     }
     .contacts-form .form {
@@ -91,6 +91,12 @@
       padding: 10px 20px;
       font-size: 10px;
     }
+    footer .social {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    display: inline-block;
+  }
 }
     
 @media screen and (max-width: 768px) {
@@ -115,7 +121,24 @@
     header .burger {
         display: block;
     }
+    .about__slider__card .img {
+      width:200px;
+      height: 190px;  
+    }
+     .works .categories-images .filter-img {
     
+    width: 260px;
+    height: 200px;
+}
+.works .filter-img-rect h3 {
+  margin-top: 55px;
+}
+.works .filter-img-rect .filter-btn {
+  width: 80px;
+  height: 30px;
+  font-size: 12px;
+  line-height: 30px;
+  }
     .works .categories-images {
       grid-template-columns: auto auto;
          
@@ -131,10 +154,7 @@
      .works .categories-images {
       grid-template-columns: auto;
     } 
-    .contacts-form .form textarea {
-        flex-grow: 0;
-        width: 500px;
-    }
+   
     .services .services__three {
         flex-direction: column;
     }
@@ -155,6 +175,11 @@
       margin-right: 5px;
       padding: 3px;
     }
+   
+.clients .clients__text, .clients .clients__copy {
+        font-size: 8px;
+
+    }
     .contacts-form .form input[type='text'],
     .contacts-form .form input[type='email'] {
       flex-basis: 250px;
@@ -169,8 +194,13 @@
       margin-bottom: 20px;
       padding: 10px;
       border: 1px solid #555;
-      margin-right: 20px;
       outline: none;
+    }
+    .contacts-form .contacts__each p {
+      font-size: 10px;
+    }
+    .contacts-form .contacts__each small {
+      font-size: 10px;
     }
 }
 
@@ -199,9 +229,6 @@
  }
     .get-in-touch p {
       font-size: 20px;
-}
-    .contacts-form .form textarea {
-        width: 300px;
 }
     .blog{
         overflow: hidden;
