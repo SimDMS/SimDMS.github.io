@@ -35,7 +35,10 @@ $('.counter').counterUp({
                 time: 3000
             });
 
-
+$('.button, .service-btn').on('click', function(event){
+  event.preventDefault();
+  alert('Сєва, цікаво?? Тут пізніше буде гарне вспливаюче вікно :)');
+});
 
 
 // плавный переход по якорям
