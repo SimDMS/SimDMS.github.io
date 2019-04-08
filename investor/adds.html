@@ -1,0 +1,136 @@
+  <ul class="pagination">
+      <li><a class="" href="#main-top"><span class="hover-text">1</span></a>
+      </li>
+      <li><a class="" href="#video-bg"><span class="hover-text">2</span></a>
+      </li>
+      <li><a class="" href="#services"><span class="hover-text">3</span></a>
+      </li>
+    </ul>
+
+
+    .pagination {
+	position:fixed;
+	list-style: none;
+	right:20px;
+	top: 50%;
+  	transform: translateY(-50%);
+	font-size:1.4em;
+	z-index: 10;
+}
+.pagination a {
+	display:block;
+	height:20px;
+	margin-bottom:5px;
+	color:white;
+	position:relative;
+	padding:4px;
+	margin-top:20px;
+}
+.pagination a.active:after {
+	box-shadow:inset 0 0 0 5px;
+}
+.pagination a .hover-text {
+	position:absolute;
+	right:15px;
+	top:7px;
+	opacity:0;
+	-webkit-transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease;
+	padding-right: 15px;
+}
+.pagination a:hover .hover-text {
+	opacity: 1;
+}
+.pagination a:after {
+	-webkit-transition:box-shadow 0.5s ease;
+	transition:box-shadow 0.5s ease;
+	width:10px;
+	height:10px;
+	display: block;
+	border:1px solid;
+	border-radius:50%;
+	content:'';
+	position: absolute;
+	margin:auto;
+	top:0;
+	right:4px;
+	bottom:0;
+}
+
+
+
+
+
+     <div class="main-about__box-content">
+               <svg><rect></rect></svg>
+               <p><span>Investor</span>Инвестиционный брокер, работающий в сфере оказания брокерских услуг с 2011 года. За столь долгий период времени компания вышла на лидирующие позиции в мировых рейтингах брокерских компаний и заработала репутацию одного из самых стабильных и честных брокеров нашего времени. Более 500 тысяч наших клиентов начав сотрудничать с нами обрели финансовую независимость и уверенность в том что финансовые трудности их больше не коснуться. Благодаря высочайшему качеству обслуживания, команде лучших сотрудников, сильным и известным партнерам и инвесторам, а также индивидуальном подходе к каждому клиенту, его возможностям и желаниям наша компания обеспечит Вас беспрецедентным уровнем сервиса и высокими процентами прибыли.
+               </p>  
+             </div>
+
+
+
+       &-content{
+			background-color:#001e2d;
+			width: 600px;
+			box-shadow:0 20px 50px rgba(0,0,0,0.5);
+			border:2px solid rgba(0,0,0,0.5);
+			padding:15px;
+			position:relative;
+			align-self:center;
+			svg, rect {
+				position:absolute;
+				top:0;
+				left:0;
+				height:100%;
+				width: 100%;
+				fill:transparent;
+			}
+			rect{
+				stroke:#0093ff;
+				stroke-width:4;
+				animation:stroke-animate 3s linear infinite;
+				stroke-dasharray: 600;
+			}
+			p {
+				color:@text-color;
+				font-size:16px;
+				line-height:28px;
+				text-align: justify;
+				border:2px solid #fed330;
+				box-sizing:border-box;
+				margin: 0;
+				padding:15px;
+				span {
+					color:#fff;
+					font-size:28px;
+					display:block;
+					padding-bottom: 10px;
+					border-bottom:1px solid #0093ff;
+					margin-bottom:10px;
+				}
+			}
+		}
+
+
+
+
+<div class="main-testemonials__carousel-card">
+              <div class="card-icon"></div>
+              <h5 class="card-name">Иван Иванов</h5>
+              <p class="card-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Но запятой путь инициал жизни. Предупреждал, о, до журчит речью строчка назад силуэт переписывается. Ведущими текст своего имеет она океана!</p>
+            </div>
+            <div class="main-testemonials__carousel-card">
+              <div class="card-icon"></div>
+              <h5 class="card-name">Иван Иванов</h5>
+              <p class="card-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Но запятой путь инициал жизни. Предупреждал, о, до журчит речью строчка назад силуэт переписывается. Ведущими текст своего имеет она океана!</p>
+            </div>
+            <div class="main-testemonials__carousel-card">
+              <div class="card-icon"></div>
+              <h5 class="card-name">Иван Иванов</h5>
+              <p class="card-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Но запятой путь инициал жизни. Предупреждал, о, до журчит речью строчка назад силуэт переписывается. Ведущими текст своего имеет она океана!</p>
+            </div>
+            <div class="main-testemonials__carousel-card">
+              <div class="card-icon"></div>
+              <h5 class="card-name">Иван Иванов</h5>
+              <p class="card-text">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Но запятой путь инициал жизни. Предупреждал, о, до журчит речью строчка назад силуэт переписывается. Ведущими текст своего имеет она океана!</p>
+            </div>
