@@ -263,6 +263,7 @@ header .languages {
 .main-about h2 {
   font-size: 36px;
   margin-bottom: 80px;
+  font-weight: 400;
 }
 .main-about__container {
   display: -webkit-box;
@@ -277,7 +278,7 @@ header .languages {
   line-height: 32px;
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
-  color: #6B6B6B;
+  color: #6b6b6b;
 }
 .main-about__container-content span {
   font-size: 18px;
@@ -367,6 +368,7 @@ header .languages {
   font-size: 36px;
   text-align: center;
   margin: 0;
+  font-weight: 400;
 }
 .main-services__content {
   display: -webkit-box;
@@ -547,6 +549,8 @@ header .languages {
 }
 .main-testemonials h3 {
   font-size: 36px;
+  font-weight: 400;
+  margin-left: 10%;
 }
 .main-testemonials__carousel {
   padding: 50px;
@@ -554,6 +558,15 @@ header .languages {
   margin: 100px auto;
   background-color: #000;
   position: relative;
+}
+.main-testemonials__carousel .quote {
+  top: 10px;
+  right: 20px;
+  text-align: right;
+}
+.main-testemonials__carousel .quote i {
+  font-size: 35px;
+  color: #fff;
 }
 .main-testemonials__carousel-card {
   text-align: center;
@@ -603,6 +616,62 @@ header .languages {
 }
 .main-testemonials .owl-dots .owl-dot.active {
   background-color: #fff;
+}
+.main-benefits {
+  min-height: 100vh;
+  padding: 60px 0;
+  text-align: center;
+}
+.main-benefits h2 {
+  font-size: 36px;
+  margin: 0;
+  font-weight: 400;
+}
+.main-benefits_container {
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.main-benefits_container_benefit {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+.main-benefits_container_benefit:nth-child(1) .benefit-icon {
+  background-image: url(../img/icons/dollar.png);
+}
+.main-benefits_container_benefit:nth-child(2) .benefit-icon {
+  background-image: url(../img/icons/shield.png);
+}
+.main-benefits_container_benefit:nth-child(3) .benefit-icon {
+  background-image: url(../img/icons/lock.png);
+}
+.main-benefits_container_benefit:nth-child(4) .benefit-icon {
+  background-image: url(../img/icons/calendar.png);
+}
+.main-benefits_container_benefit .benefit-icon {
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 3px solid #FFA600;
+  background-size: 50%;
+}
+.main-benefits_container_benefit .benefit-heading {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #6b6b6b;
+  font-variant: small-caps;
+}
+.main-benefits_container_benefit .benefit-description {
+  font-size: 12px;
+  color: #cccccc;
+  line-height: 22px;
 }
 @-webkit-keyframes arrow-down {
   0% {
