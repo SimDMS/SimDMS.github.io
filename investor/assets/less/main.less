@@ -2,6 +2,7 @@
 @main-bg-color:#28292D;
 @bg-color:lighten(@main-bg-color, 5%);
 @text-color:#cccccc;
+@color-on-white:#6B6B6B;
 // -----------
 * {
 	box-sizing:border-box;
@@ -229,6 +230,7 @@ header {
 	h2 {
 				font-size:36px;
 				margin-bottom: 80px;
+				font-weight:400;
 			}
 	&__container {
 		display:flex;
@@ -237,7 +239,7 @@ header {
 			font-size:16px;
 			line-height:32px;
 			flex-basis: 60%;
-			color:#6B6B6B;
+			color:@color-on-white;
 			span {
 				font-size:18px;
 				color:#3c3c3c;
@@ -325,6 +327,7 @@ header {
 		font-size:36px;
 		text-align: center;
 		margin: 0;
+		font-weight:400;
 	}
 	&__content {
 		display:flex;
@@ -495,6 +498,8 @@ header {
 	padding-top:60px;
 	h3 {
 		font-size:36px;
+		font-weight:400;
+		margin-left: 10%;
 	}
 	&__carousel {
 		padding:50px;
@@ -502,6 +507,15 @@ header {
 		margin: 100px auto;
 		background-color:#000;
 		position:relative;
+		.quote {
+				top:10px;
+				right:20px;
+				text-align: right;
+				i {
+					font-size:35px;
+					color:#fff;
+				} 
+			}
 		&-card {
 			text-align: center;
 			width: 500px;
@@ -550,6 +564,69 @@ header {
 			}
 	}
 
+}
+
+.main-benefits {
+	min-height:100vh;
+	padding:60px 0;
+	text-align: center;
+	h2 {
+		font-size:36px;
+		margin: 0;
+		font-weight:400;
+	}
+	&_container {
+		margin-top: 150px;
+		display:flex;
+		justify-content:space-around;
+		&_benefit {
+			&:nth-child(1){
+				.benefit-icon{
+					background-image:url(../img/icons/dollar.png);
+				}
+			}
+			&:nth-child(2){
+				.benefit-icon{
+					background-image:url(../img/icons/shield.png);
+				}
+			}
+			&:nth-child(3){
+				.benefit-icon{
+					background-image:url(../img/icons/lock.png);
+				}
+			}
+			&:nth-child(4){
+				.benefit-icon{
+					background-image:url(../img/icons/calendar.png);
+				}
+			}
+			flex-basis:20%;
+			.benefit-icon {
+				background-repeat: no-repeat;
+				background-position: center center;
+				height:90px;
+				width: 90px;
+				border-radius:50%;
+				margin: 0 auto;
+				border:3px solid #FFA600;
+				background-size:50%;
+				
+			}
+			.benefit-heading {
+				font-weight:400;
+				font-size:18px;
+				line-height: 28px;
+				color:@color-on-white;
+				font-variant:small-caps;
+			}
+			.benefit-description {
+				font-size:12px;
+				color:@text-color;
+				line-height:22px;
+
+			}
+		}
+	}
 }
 
 
