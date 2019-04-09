@@ -704,6 +704,90 @@ header .languages {
   margin-bottom: 200px;
   font-size: 28px;
 }
+footer {
+  min-height: 100vh;
+  padding: 40px 0;
+  background-color: #28292d;
+  color: #cccccc;
+}
+footer .footer-nav {
+  height: 80px;
+}
+footer .footer-nav ul {
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+footer .footer-nav ul li a {
+  text-decoration: none;
+  color: #cccccc;
+  padding: 10px 0;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+footer .footer-nav ul li a:hover {
+  color: #fff;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+footer .footer-social {
+  margin: 20px auto;
+}
+footer .footer-social ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 250px;
+  padding: 0;
+  margin: 0 auto;
+}
+footer .footer-social ul li a {
+  text-decoration: none;
+  color: #cccccc;
+  font-size: 28px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+footer .footer-social ul li a:hover {
+  color: #fff;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+footer .footer-privacy {
+  text-align: center;
+}
+footer .footer-privacy a {
+  color: #cccccc;
+}
+footer .footer-content {
+  margin: 60px auto;
+  width: 70%;
+  font-size: 14px;
+  line-height: 24px;
+}
+footer .line {
+  display: block;
+  width: 100%;
+  height: 3px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+}
+footer .copy {
+  display: block;
+  text-align: center;
+  margin-top: 150px;
+}
 @-webkit-keyframes arrow-down {
   0% {
     border-color: #fff;
@@ -750,22 +834,6 @@ header .languages {
   }
   100% {
     color: transparent;
-  }
-}
-@-webkit-keyframes stroke-animate {
-  0% {
-    stroke-dashoffset: 1200;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-@keyframes stroke-animate {
-  0% {
-    stroke-dashoffset: 1200;
-  }
-  100% {
-    stroke-dashoffset: 0;
   }
 }
 @-webkit-keyframes huge-bg {
