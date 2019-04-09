@@ -511,9 +511,16 @@ header {
 				top:10px;
 				right:20px;
 				text-align: right;
+				padding-top:5px;
 				i {
 					font-size:35px;
 					color:#fff;
+					transition:1s;
+					transform-origin: right top;
+					&:hover {
+					transform: rotate(-90deg);
+					transition:1s;
+					}
 				} 
 			}
 		&-card {
@@ -629,6 +636,26 @@ header {
 	}
 }
 
+.main-quiz {
+	min-height:100vh;
+	padding-top:60px;
+	background:url(../img/qize-bg.jpg) no-repeat center center;
+	background-size: cover;
+	color:@text-color;
+	&__prize {
+		animation:prize .8s linear infinite alternate;
+	}
+	&__value {
+		font-size:150px;
+		font-weight:700;
+		color:#f7b731;
+	}
+	&__description {
+		margin-bottom: 200px;
+		font-size:28px;
+	}
+}
+
 
 
 
@@ -674,5 +701,14 @@ header {
 	}
 	100% {
 		transform: scale(2);
+	}
+}
+
+@keyframes prize {
+	0% {
+		color:@text-color;
+	}
+	100% {
+		color:transparent;
 	}
 }
