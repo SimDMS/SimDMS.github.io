@@ -51,7 +51,28 @@ $('.button, .service-btn').on('click', function(event){
 });
 // -------------------
 
+// arrow button
+$('.arrow-to-menu').on('click', function(event){
+  $(this).toggleClass('arrow-to-top');
+});
 
+ $('#arrow-link').on('click', function(){
+  if ($(this).attr('href')=='#footer'){
+    $(this).attr('href','#main-top');
+  } else {
+    $(this).attr('href', '#footer')
+  };
+ });
+// ------------
 
+$(window).scroll(function(){
+ if($(window).scrollTop() >= $('#footer').offset().top) {
+  $('.arrow-to-menu').addClass('arrow-to-top');
+  $('#arrow-link').attr('href','#main-top');
+ } else if ($(window).scrollTop() === 0) {
+  $('.arrow-to-menu').removeClass('arrow-to-top');
+  $('#arrow-link').attr('href','#footer');
+ }
+});
 
 });
