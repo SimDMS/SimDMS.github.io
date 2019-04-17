@@ -1,0 +1,91 @@
+.left-sidebar {
+	background-color:@main-bg-color;
+	padding: 100px 40px;
+	flex-basis: 280px;
+	&__nav {
+		ul {
+			padding: 0;
+			list-style: none;
+			display: flex;
+			flex-direction: column;
+			li {
+				margin-bottom: 25px;
+				a {
+					color:@text-color;
+					text-decoration: none;
+					transition: .2s;
+					text-transform: uppercase;
+					font-size:12px;
+					font-weight: 100;
+					letter-spacing:1px;
+					&:hover {
+						color:#fed330;
+						transition: .2s;
+					}
+				}
+			}
+		}
+	}
+	.opportunities {
+		margin-top: 50px;
+		ul {
+			list-style:none;
+			padding: 0;
+			li {
+				margin-bottom: 20px;
+				color:@text-color;
+				font-weight:100;
+				font-size:12px;
+				line-height: 18px;
+				padding-left: 50px;
+				padding-right: 20px;
+				position:relative;
+				cursor: pointer;
+				&::before {
+					content:"";
+					position:absolute;
+					display:block;
+					width:30px;
+					height:30px;
+					top:0;
+					left:0;
+					background-size:cover;
+					background-repeat:no-repeat;
+					filter: grayscale(1);
+					transition: .2s;
+				}
+					&:hover {
+						&::before {
+						filter:grayscale(0);
+						transition: .2s;
+						}
+					}
+				&:nth-child(1) {
+					&::before {
+						background-image:url(../img/icons/certificate.png);
+					}
+				}
+				&:nth-child(2) {
+					&::before {
+						background-image:url(../img/icons/protect.png);
+					}
+				}
+				&:nth-child(3) {
+					&::before {
+						background-image:url(../img/icons/mastercard.png);
+					}
+				}
+				&:nth-child(4) {
+					&::before {
+						background-image:url(../img/icons/visa.png);
+					}
+				}
+				&:nth-child(5) {
+					&::before {
+						background-image:url(../img/icons/maestro.png);
+					}
+				}
+			}
+		}
+	}
+}

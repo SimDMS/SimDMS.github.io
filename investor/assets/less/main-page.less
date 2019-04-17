@@ -181,7 +181,6 @@
 		margin-top: 100px;
 		font-size:14px;
 		border-collapse:collapse;
-		margin-bottom: 100px;
 		th {
 			padding:20px 40px;
 			background-color: #000;
@@ -248,15 +247,6 @@
 			overflow: hidden;
 			transition: 0.2s;
 			position:relative;
-			&::after {
-				content:"";
-				position:absolute;
-				top:0;
-				left:0;
-				height:100%;
-				width: 50%;
-				background-color:rgba(255,255,255,0.2);
-			}
 			&:hover {
 				color:#fff;
 				transition: 0.2s;
@@ -370,7 +360,6 @@
 		left:0;
 		background:url(../img/section.jpg) no-repeat center;
 		background-size:cover;
-		background-attachment:fixed;
 		z-index:-1;
 		animation:huge-bg 25s linear infinite alternate;
 		transform: scale(1);

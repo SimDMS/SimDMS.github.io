@@ -35,11 +35,6 @@ $('.counter').counterUp({
                 time: 3000
             });
 
-$('.button, .service-btn').on('click', function(event){
-  event.preventDefault();
-  alert('Сєва, цікаво?? Тут пізніше буде гарне вспливаюче вікно :)');
-});
-
 
 // плавный переход по якорям
  var $page = $('html, body');
@@ -72,20 +67,37 @@ $(window).scroll(function(){
  } else if ($(window).scrollTop() === 0) {
   $('.arrow-to-menu').removeClass('arrow-to-top');
   $('#arrow-link').attr('href','#footer');
- }
+ } 
+
 });
 
 
-   wow = new WOW(
-                  {
-                    boxClass:     'wow',      // default
-                    animateClass: 'animated', // default
-                    offset:       0,          // default
-                    mobile:       false,       // default
-                    live:         true        // default
-                    }
-                    )
-                    wow.init();
+   // wow = new WOW(
+   //                {
+   //                  boxClass:     'wow',      // default
+   //                  animateClass: 'animated', // default
+   //                  offset:       0,          // default
+   //                  mobile:       false,       // default
+   //                  live:         true        // default
+   //                  }
+   //                  )
+   //                  wow.init();
+
+
+// popup
+
+$('#button-enter').on('click', function(){
+  $('#popup-enter').css('transform', 'scale(1)');
+});
+$('#button-register').on('click', function(){
+  $('#popup-registration').css('transform', 'scale(1)');
+});
+$('.popup-close').on('click', function(){
+  $('.popup').css('transform', 'scale(0)');
+});
+
+// ----------------------
+
 
 
 });
