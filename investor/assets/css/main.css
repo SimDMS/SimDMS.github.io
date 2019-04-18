@@ -1541,6 +1541,11 @@ header .languages {
   .right-sidebar__content p {
     font-size: 28px;
   }
+  .right-sidebar__content input[type=email],
+  .right-sidebar__content input[type=password] {
+    display: block;
+    padding: 10px 5px;
+  }
   .right-sidebar__content label {
     font-size: 12px;
   }
