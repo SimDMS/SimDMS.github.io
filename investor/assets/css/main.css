@@ -1468,7 +1468,6 @@ header .languages {
 .right-sidebar__content p {
   font-size: 36px;
   text-align: center;
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 }
 .right-sidebar__content input[type=email],
 .right-sidebar__content input[type=password] {
@@ -1556,7 +1555,7 @@ header .languages {
     padding-top: 60px;
   }
   .right-sidebar__content p {
-    font-size: 28px;
+    font-size: 22px;
     margin: 20px 0px;
   }
   .right-sidebar__content label {
@@ -1721,7 +1720,10 @@ header .languages {
     margin-right: 10px;
     width: 200px;
   }
-  header .content .entry ul li a {
+  header .content .entry ul li button {
+    font-size: 10px;
+  }
+  header .content .entry ul li.enter button {
     font-size: 12px;
   }
   header .content .languages {
