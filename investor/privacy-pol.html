@@ -18,14 +18,14 @@
     <title>Торговая платформа Best Invest|Путь к Вашему успеху только с нами..</title>
   </head>
   <body>
-    <header class = "site-header" id = "site-header">
+     <header class = "site-header" id = "site-header">
      <div class="content">
        <a href="index.html"><div class="logo">
        </div></a>
        <div class="entry">
          <ul>
-           <li ><a class = 'button' href="#">регистрация</a></li>
-           <li class = 'enter'><a href="#">вход</a></li>
+           <li><button class = 'button button-register'>регистрация</a></li>
+           <li class = 'enter'><button class = "button-enter">вход</li>
          </ul>
        </div>
        <a href="#"><div class="languages"></div></a>
@@ -108,8 +108,32 @@
       </div>
       <div class="footer-privacy"><a href="privacy-pol.html">Политика конфиденциальности</a></div>
       <small class="copy">&#9400; 2011-2019</small>
-      
     </div>
+    </footer>
+   <div class="right-sidebar" id = "sidebar-enter">
+       <div class="right-sidebar__content">
+        <span class = "right-sidebar-close">&times;</span>
+        <p>Вход</p>
+         <input type="email" name = "email" placeholder="E-mail">
+         <input type="password" name = "password" placeholder="Пароль">
+         <label><input type="checkbox">Запомнить меня</label>
+         <button class = 'button'>Войти</button>
+          <small id = "restore-password">Восстановить пароль</small>
+         <small id = "create-account" class = "button-register">Создать новый аккаунт</small>
+       </div>
+      </div>
+      <div class="right-sidebar" id = "sidebar-register">
+       <div class="right-sidebar__content">
+        <span class = "right-sidebar-close">&times;</span>
+        <p>Регистрация</p>
+         <input type="email" name = "email" placeholder="E-mail">
+         <input type="password" name = "password" placeholder="Пароль">
+         <input type="password" name = "password" placeholder="Повторить пароль">
+         <label><input type="checkbox">Принимаю <a href="#">положения и условия</a> и подтверждаю факт совершеннолетия</label>
+         <button class = 'button'>зарегистрироваться</button>
+         <small class = 'button-enter'>У меня есть аккаунт</small>
+       </div>
+      </div>
    
 
 

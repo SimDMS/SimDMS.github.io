@@ -24,8 +24,8 @@
        </div></a>
        <div class="entry">
          <ul>
-           <li><button class = 'button'  id = "button-register">регистрация</a></li>
-           <li class = 'enter'><button id = "button-enter">вход</li>
+           <li><button class = 'button button-register'>регистрация</a></li>
+           <li class = 'enter'><button class = "button-enter">вход</li>
          </ul>
        </div>
        <a href="#"><div class="languages"></div></a>
@@ -55,31 +55,31 @@
             <div class="icon-right-top"><img src="assets/img/b4c0f53f0a5c1bc805937fc7ca201d5a.png" alt="иконка VIP">Надёжность, эффективность, результат!</div>
            <h2>Инвестиции, которые сделают вас успешными</h2>
             <p class="description">Зарегистрируйтесь и ощутите весь спектр преимуществ.<br>Best Invest — ведущая торговая платформа!</p>
-           <a href="#" class="button">попробовать</a>
+           <button  class="button button-register">попробовать</button>
           </div>
           <div class = 'slide' style="background-image: url(assets/img/slice-slider/5blur.jpg)">
              <div class="icon-right-top"><img src="assets/img/b4c0f53f0a5c1bc805937fc7ca201d5a.png" alt="иконка VIP">Надёжность, эффективность, результат!</div>
              <h2>Команда из опытных специалистов поможет вам зарабатывать</h2>
              <p class="description">Зарегистрируйтесь и ощутите весь спектр преимуществ.<br>Best Invest — ведущая торговая платформа!</p>
-             <a href="#" class="button">попробовать</a>
+            <button  class="button button-register">попробовать</button>
           </div>
            <div class = 'slide' style="background-image: url(assets/img/slice-slider/6.jpeg)">
              <div class="icon-right-top"><img src="assets/img/b4c0f53f0a5c1bc805937fc7ca201d5a.png" alt="иконка VIP">Надёжность, эффективность, результат!</div>
              <h2>Мы знаем, как заставить ваши вложения работать и приносить прибыль</h2>
               <p class="description">Зарегистрируйтесь и ощутите весь спектр преимуществ.<br>Best Invest — ведущая торговая платформа!</p>
-             <a href="#" class="button">попробовать</a>
+             <button  class="button button-register">попробовать</button>
            </div>
            <div class = 'slide' style="background-image: url(assets/img/slice-slider/4.jpeg)">
              <div class="icon-right-top"><img src="assets/img/b4c0f53f0a5c1bc805937fc7ca201d5a.png" alt="иконка VIP">Надёжность, эффективность, результат!</div>
              <h2>Инвестиции, которые сделают вас успешными</h2>
               <p class="description">Зарегистрируйтесь и ощутите весь спектр преимуществ.<br>Best Invest — ведущая торговая платформа!</p>
-             <a href="#" class="button">попробовать</a>
+             <button  class="button button-register">попробовать</button>
            </div>
            <div class = 'slide' style="background-image: url(assets/img/slice-slider/1.jpg)">
              <div class="icon-right-top"><img src="assets/img/b4c0f53f0a5c1bc805937fc7ca201d5a.png" alt="иконка VIP">Надёжность, эффективность, результат!</div>
              <h2>Начните зарабатывать прямо сейчас с Best Invest</h2>
               <p class="description">Зарегистрируйтесь и ощутите весь спектр преимуществ.<br>Best Invest — ведущая торговая платформа!</p>
-             <a href="#" class="button">попробовать</a>
+             <button  class="button button-register">попробовать</button>
            </div>
         </div>
         <div class="arrow-down">
@@ -187,7 +187,7 @@
             <div class="main-services__content_service wow fadeInDown" data-wow-delay = '0.5s'>
               <div class="service-icon">03</div>
                 <h3 class="service-heading">
-                  долкосрочные инвестиции
+                  долгосрочные инвестиции
                 </h3>
                 <div class="service-description">
                   Предложение состоящее из направлений и инструментов, наборов ценных бумаг, собранных по принципу минимизации рисков. И подходит предпринимателям, крупным инвесторам, а так же корпоративным клиентам которые не ищут приключений, работают спокойно с крупными счетами и долгосрочными перспективами            
@@ -310,7 +310,7 @@
         <p class="main-quiz__prize">Призовой фонд сегодня</p>
         <div class="main-quiz__value wow bounceInRight" data-wow-delay= '1.5s'>$300</div>
         <p class="main-quiz__description">Испытаете удачу, поучаствовав в бесплатном турнире!</p>
-        <a href="" class="main-quiz__btn button">узнать подробности</a>
+        <button class="main-quiz__btn button button-register">узнать подробности</button>
       </div>
     </section>
   </main>
@@ -345,23 +345,30 @@
     
   </footer>
 
-      <div class="popup" id = "popup-enter">
-       <div class="popup__content">
-         <input type="text" name = "login" placeholder="Логин">
+      <div class="right-sidebar" id = "sidebar-enter">
+       <div class="right-sidebar__content">
+        <span class = "right-sidebar-close">&times;</span>
+        <p>Вход</p>
+         <input type="email" name = "email" placeholder="E-mail">
          <input type="password" name = "password" placeholder="Пароль">
-         <button class = 'button'>Вход</button>
-         <span class = "popup-close">&times;</span>
+         <label><input type="checkbox">Запомнить меня</label>
+         <button class = 'button'>Войти</button>
+          <small id = "restore-password">Восстановить пароль</small>
+         <small id = "create-account" class = "button-register">Создать новый аккаунт</small>
        </div>
       </div>
-   <div class="popup" id = "popup-registration">
-       <div class="popup__content">
-         <input type="text" name = "login" placeholder="Логин">
+      <div class="right-sidebar" id = "sidebar-register">
+       <div class="right-sidebar__content">
+        <span class = "right-sidebar-close">&times;</span>
+        <p>Регистрация</p>
+         <input type="email" name = "email" placeholder="E-mail">
          <input type="password" name = "password" placeholder="Пароль">
-         <input type="password" name = "password-repeat" placeholder="Повторите пароль">
-         <button class = 'button'>Зарегистрироваться</button>
-        <span class = "popup-close">&times;</span>
+         <input type="password" name = "password" placeholder="Повторить пароль">
+         <label><input type="checkbox">Принимаю <a href="#">положения и условия</a> и подтверждаю факт совершеннолетия</label>
+         <button class = 'button'>зарегистрироваться</button>
+         <small class = 'button-enter'>У меня есть аккаунт</small>
        </div>
-      </div> 
+      </div>
 
 
 

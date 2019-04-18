@@ -84,16 +84,65 @@ $(window).scroll(function(){
    //                  wow.init();
 
 
-// popup
+// right-sidebar
 
-$('#button-enter').on('click', function(){
-  $('#popup-enter').css('transform', 'scale(1)');
+$('.button-enter').on('click', function(){
+  $('#sidebar-enter').css({
+  '-webkit-transform' : 'translateX(0)',
+  '-moz-transform'    : 'translateX(0)',
+  '-ms-transform'     : 'translateX(0)',
+  '-o-transform'      : 'translateX(0)',
+  'transform'         : 'translateX(0)'
+  });
+  $('#sidebar-register').css({
+  '-webkit-transform' : 'translateX(100%)',
+  '-moz-transform'    : 'translateX(100%)',
+  '-ms-transform'     : 'translateX(100%)',
+  '-o-transform'      : 'translateX(100%)',
+  'transform'         : 'translateX(100%)'
+  });
 });
-$('#button-register').on('click', function(){
-  $('#popup-registration').css('transform', 'scale(1)');
+$('.button-register').on('click', function(){
+  $('#sidebar-register').css({
+  '-webkit-transform' : 'translateX(0)',
+  '-moz-transform'    : 'translateX(0)',
+  '-ms-transform'     : 'translateX(0)',
+  '-o-transform'      : 'translateX(0)',
+  'transform'         : 'translateX(0)'
+  });
+   $('#sidebar-enter').css({
+  '-webkit-transform' : 'translateX(100%)',
+  '-moz-transform'    : 'translateX(100%)',
+  '-ms-transform'     : 'translateX(100%)',
+  '-o-transform'      : 'translateX(100%)',
+  'transform'         : 'translateX(100%)'
+  });
 });
-$('.popup-close').on('click', function(){
-  $('.popup').css('transform', 'scale(0)');
+
+$(document).mouseup(function (e){ // событие клика по веб-документу
+    var div = $(".right-sidebar"); // тут указываем ID элемента
+    if (!div.is(e.target) // если клик был не по нашему блоку
+        && div.has(e.target).length === 0) { // и не по его дочерним элементам
+      div.css({
+  '-webkit-transform' : 'translateX(100%)',
+  '-moz-transform'    : 'translateX(100%)',
+  '-ms-transform'     : 'translateX(100%)',
+  '-o-transform'      : 'translateX(100%)',
+  'transform'         : 'translateX(100%)'
+  }); // скрываем его
+    };
+  });
+
+
+
+$('.right-sidebar-close').on('click', function(){
+  $('.right-sidebar').css({
+ '-webkit-transform' : 'translateX(100%)',
+  '-moz-transform'    : 'translateX(100%)',
+  '-ms-transform'     : 'translateX(100%)',
+  '-o-transform'      : 'translateX(100%)',
+  'transform'         : 'translateX(100%)'
+  });
 });
 
 // ----------------------
