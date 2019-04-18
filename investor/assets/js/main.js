@@ -20,7 +20,7 @@ $(document).ready(function(){
   	dots					:false,
   	animateOut				:'fadeOut',
   	animateIn				:'fadeIn',
-    nav             :true
+    nav             :false
   });
 
     $(".owl-two").owlCarousel({

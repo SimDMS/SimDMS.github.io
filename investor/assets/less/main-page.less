@@ -189,10 +189,17 @@
 			padding:10px 30px;
 			background-color: #ddd;
 			color:#000;
-			a {
+			button {
 				padding:10px 15px;
 				text-decoration: none;
 				color:#000;
+				background:none;
+				border:none;
+				outline:none;
+				display:block;
+				width:100%;
+				height:100%;
+				cursor:pointer;
 			}
 		}
 		.table-week {
@@ -210,14 +217,13 @@
 			letter-spacing: 2px;
 			font-size:12px;
 			transition: background-color .2s, font-weight .2s;
+			font-variant:small-caps;
 			&:hover {
 				background-color:#fed330;
 				transition: background-color .2s;
 			}
-			a {
-				animation:watch 2s ease-in infinite;
+			button {
 				&:hover {
-					animation:none;
 					font-weight:700;
 				}
 			}
@@ -315,31 +321,8 @@
 			}
 			.service-description {
 				font-size:12px;
-				margin-bottom: 40px;
 				line-height:20px;
 				font-weight:700;
-			}
-			.service-btn {
-				color:#000;
-				text-decoration: none;
-				padding:10px 20px;
-				background-color:#fff;
-				border-radius:5px;
-				font-weight:700;
-				font-size:14px;
-				position:absolute;
-				z-index:2;
-				transition: .2s;
-				bottom:15px;
-				left:50%;
-				transform: translate(-50%, 0);
-				font-variant: small-caps;
-				letter-spacing:2px;
-				&:hover {
-					transform: translate(-50%, -5px);
-					box-shadow:3px 3px 5px rgba(0,0,0,0.6);
-					transition: .2s;
-				}
 			}
 		}
 	}
